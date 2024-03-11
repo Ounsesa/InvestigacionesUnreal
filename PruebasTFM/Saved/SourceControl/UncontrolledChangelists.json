@@ -1,0 +1,21 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/StarterContent/Particles/P_Ambient_Dust.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/Blueprints/BP_ActorPruebas.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/GT/VFJ3I99Q6AA7R2YH1T0TD1.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/Blueprints/BP_ActorPruebasReferencia.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/E/ZT/1Y91RN9M4CUSPNTCLPY6MK.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/Blueprints/BP_ActorModificaInstance.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/EN/OCFBT4DKI6RW6QEPAZ5N41.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/Blueprints/NewDataAsset.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/Z5/2NU7MCIBOVZPKQH4CQLIVW.uasset"
+			]
+		}
+	]
+}
