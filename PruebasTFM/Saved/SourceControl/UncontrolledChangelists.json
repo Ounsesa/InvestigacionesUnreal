@@ -5,6 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"E:/Github/InvestigacionesUnreal/PruebasTFM/Content/MyDustyCharacter.uasset",
+				"E:/Github/InvestigacionesUnreal/PruebasTFM/Content/Blueprints/BP_GameMode.uasset",
+				"E:/Github/InvestigacionesUnreal/PruebasTFM/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
 				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/StarterContent/Particles/P_Ambient_Dust.uasset",
 				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/Blueprints/BP_ActorPruebas.uasset",
 				"C:/Users/carlos.calzada/Documents/Unreal Projects/PruebasTFM/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/GT/VFJ3I99Q6AA7R2YH1T0TD1.uasset",
