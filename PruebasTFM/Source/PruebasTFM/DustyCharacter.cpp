@@ -24,10 +24,6 @@ ADustyCharacter::ADustyCharacter(const FObjectInitializer& ObjectInitializer)
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	//No sé si tiene que ir aquí o en el propio componente de movimiento
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f); // ...at this rotation rate
-
 	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
@@ -89,6 +85,21 @@ void ADustyCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 	}
 
+}
+
+
+//Ignora al propio personaje y sus hijos (camara, capsula, etc)
+FCollisionQueryParams ADustyCharacter::GetIgnoreCharacterCollisionParams() const
+{
+	FCollisionQueryParams params;
+
+	TArray<AActor*> CharacterChildren;
+	GetAllChildActors(CharacterChildren);
+
+	params.AddIgnoredActors(CharacterChildren);
+	params.AddIgnoredActor(this);
+
+	return params;
 }
 
 void ADustyCharacter::Move(const FInputActionValue& Value)

@@ -65,5 +65,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+	FORCEINLINE class UDustyCharacterMovementComponent* GetDustyMovementComponent() const { return DustyCharacterMovementComponent; }
+
+	FCollisionQueryParams GetIgnoreCharacterCollisionParams() const;
 
 };
