@@ -77,10 +77,13 @@ public:
 
 	virtual bool CanCrouchInCurrentState() const override;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Movement")
+	bool bSliding = false;
 
+	UFUNCTION(BlueprintCallable, Category = "Movement")
+	void EnterSlide();
 private:
 
-	void EnterSlide();
 	void ExitSlide();
 	void PhysSlide(float deltaTime, int32 Iterations);
 	bool GetSlideSurface(FHitResult& Hit) const;

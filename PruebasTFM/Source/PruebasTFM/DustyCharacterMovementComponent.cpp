@@ -53,16 +53,6 @@ void UDustyCharacterMovementComponent::OnMovementUpdated(float DeltaSeconds, con
 
 void UDustyCharacterMovementComponent::UpdateCharacterStateBeforeMovement(float DeltaSeconds)
 {
-	if (MovementMode == MOVE_Walking && !bWantsToCrouch && bPrevWantsToCrouch)
-	{
-		FHitResult PotentialSlideSurface;
-
-		if (Velocity.SizeSquared() > pow(Min_SlideSpeed, 2) && GetSlideSurface(PotentialSlideSurface))
-		{
-			EnterSlide();
-		}
-	}
-
 	if (IsCustomMovementMode(CMOVE_Slide) && !bWantsToCrouch)
 	{
 		ExitSlide();
@@ -104,13 +94,21 @@ bool UDustyCharacterMovementComponent::CanCrouchInCurrentState() const
 
 void UDustyCharacterMovementComponent::EnterSlide()
 {
+	bSliding = true;
 	bWantsToCrouch = true;
 	Velocity += Velocity.GetSafeNormal2D() * SlideEnterImpulse;
 	SetMovementMode(MOVE_Custom, CMOVE_Slide);
+//	FHitResult PotentialSlideSurface;
+//	if (Velocity.SizeSquared() > pow(Min_SlideSpeed, 2) && GetSlideSurface(PotentialSlideSurface))
+//	{
+//
+//		
+//	}
 }
 
 void UDustyCharacterMovementComponent::ExitSlide()
 {
+	bSliding = false;
 	bWantsToCrouch = false;
 
 	//Despues de deslizar vuelves a poner la capsula en vertical

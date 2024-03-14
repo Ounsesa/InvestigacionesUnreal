@@ -43,6 +43,7 @@ public:
 	// Sets default values for this character's properties
 	ADustyCharacter(const FObjectInitializer& ObjectInitializer);
 
+
 protected:
 
 	/** Called for movement input */
